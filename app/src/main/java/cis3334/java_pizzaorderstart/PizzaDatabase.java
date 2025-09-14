@@ -26,7 +26,7 @@ public abstract class PizzaDatabase extends RoomDatabase {
         if (INSTANCE == null) {
             synchronized (PizzaDatabase.class) {
                 if (INSTANCE == null) {
-                    Log.d("CIS 3334", "PizzaDatabase in getDatabase() calling databaseBuilder");
+                    Log.d("CIS 3334 ", "PizzaDatabase in getDatabase() calling databaseBuilder");
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     PizzaDatabase.class, "pizza_database")
                             .build();
