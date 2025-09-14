@@ -3,7 +3,7 @@ package cis3334.java_pizzaorderstart;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PizzaOrder {
+public class PizzaRepository {
     public static final Double DELIVERY_PRICE = 2.50;
 
     private List<Pizza> pizzasInOrder;          // list of pizzas ordered so far
@@ -12,7 +12,7 @@ public class PizzaOrder {
     /***
      *  Constructor initializes the Arraylist holding the pizzas in the order
      */
-    public PizzaOrder ( ) {
+    public PizzaRepository( ) {
         pizzasInOrder = new ArrayList<Pizza>();
     }
 

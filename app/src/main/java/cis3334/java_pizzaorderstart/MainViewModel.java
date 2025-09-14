@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel;
 import java.util.List;
 
 public class MainViewModel extends ViewModel {
-    PizzaOrder myPizzaOrder = new PizzaOrder();
+    PizzaRepository myPizzaOrder = new PizzaRepository();
 
     public void placeOrder(String topping, Integer size) {
         myPizzaOrder.OrderPizza(topping, size);

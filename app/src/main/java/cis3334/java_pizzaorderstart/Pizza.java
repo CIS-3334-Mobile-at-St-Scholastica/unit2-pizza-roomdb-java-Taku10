@@ -1,10 +1,19 @@
 package cis3334.java_pizzaorderstart;
 
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
 /***
  *  Details for a single pizza
  */
+@Entity(tableName = "pizza_table")
 public class Pizza {
-    final Double[] PIZZA_PRICES = {7.99, 9.99, 12.99, 14.99};
+    @PrimaryKey(autoGenerate = true)
+    private int id; //id for database
+    @Ignore
+     final Double[] PIZZA_PRICES = {7.99, 9.99, 12.99, 14.99};
+
+    @Ignore
     final String[] PIZZA_SIZES = {"Small","Medium","Large","X-Large"};
 
     private String topping;
